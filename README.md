@@ -1,7 +1,11 @@
-# google-java-format
+# google-java-format-120-line-break
 
 `google-java-format` is a program that reformats Java source code to comply with
 [Google Java Style][].
+
+This is a modified version of the plugin in which line break is extended to 120 columns.
+
+In order to use this plugin in IntelliJ, import `idea_plugin/build/distributions/google-java-format.zip` in `Preferences → Plugins → Install Plugin from Disk...`
 
 [Google Java Style]: https://google.github.io/styleguide/javaguide.html
 

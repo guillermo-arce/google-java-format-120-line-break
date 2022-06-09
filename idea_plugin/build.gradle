@@ -19,11 +19,12 @@ plugins {
 }
 
 repositories {
+  mavenLocal()
   mavenCentral()
 }
 
 ext {
-  googleJavaFormatVersion = "1.15.0"
+  googleJavaFormatVersion = "7.7.7"
 }
 
 apply plugin: "org.jetbrains.intellij"
@@ -39,7 +40,7 @@ intellij {
 }
 
 patchPluginXml {
-  pluginDescription = "Formats source code using the google-java-format tool. This version of " +
+  pluginDescription = "Formats source code using the google-java-format tool with a line break of 120. This version of " +
                       "the plugin uses version ${googleJavaFormatVersion} of the tool."
   version.set("${googleJavaFormatVersion}.0")
   sinceBuild = "203"

@@ -86,7 +86,7 @@ import javax.tools.StandardLocation;
 @Immutable
 public final class Formatter {
 
-  public static final int MAX_LINE_LENGTH = 100;
+  public static final int MAX_LINE_LENGTH = 120;
 
   static final Range<Integer> EMPTY_RANGE = Range.closedOpen(-1, -1);
 
